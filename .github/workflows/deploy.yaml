@@ -19,7 +19,7 @@ jobs:
           host: ${{ secrets.SSH_HOST }}
           username: ${{ secrets.VPS_USER }}
           key: ${{ secrets.SSH_KEY }}
-          scripts: |
+          script: |
             cd /root/node-app-docker
             git pull
             docker compose up -d --build
