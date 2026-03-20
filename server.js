@@ -42,7 +42,7 @@ app.get("/", async (req, res) => {
     const c = data.current;
 
     res.render("weather", {
-      location: "Pokhara, Nepal❤️‍🔥",
+      location: "Pokhara, Nepal",
       temperature: c.temperature_2m,
       humidity: c.relative_humidity_2m,
       wind: c.wind_speed_10m,
